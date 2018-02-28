@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+
+<configuration>
+  <property>
+    <name>hbase.zookeeper.quorum</name>
+    <value>hadoop2.palmaplus.com,hadoop3.palmaplus.com,hadoop4.palmaplus.com</value>
+  </property>
+
+  <property>
+	<name>mapred.reduce.tasks</name>
+	<value>1</value>
+  </property>
+
+
+  <property>
+    <name>mapred.reduce.slowstart.completed.maps</name>
+    <value>0.9</value>
+    <description></description>
+  </property>
+
+  <property>
+    <name>mongo.collection.employee</name>
+    <value>lanxin_test</value>
+  </property>
+ 
+  
+  <property>
+    <name>mongo.collection.employee.date</name>
+    <value>date</value>
+  </property> 
+  
+  
+  <property>
+    <name>mongo.collection.employee.mac</name>
+    <value>mac</value>
+  </property>   
+  <property>
+    <name>mongo.collection.employee.starttime</name>
+    <value>start_time</value>
+  </property> 
+  <property>
+    <name>mongo.collection.employee.endtime</name>
+    <value>end_time</value>
+  </property> 
+  <property>
+    <name>mongo.collection.employee.worktime</name>
+    <value>worktime</value>
+  </property> 
+  <property>
+   	<name>mongo.collection.employee.overtime</name>
+    <value>overtime</value>
+  </property> 
+  <property>
+    <name>mongo.collection.employee.incorrect</name>
+    <value>incorrect</value>
+  </property> 
+  <property>
+     <name>mongo.collection.employee.businessstart</name>
+     <value>MONING_START_WORK_TIME</value>
+  </property> 
+  <property>
+     <name>mongo.collection.employee.businessend</name>
+     <value>AFTERNOON_END_WORK_TIME</value>
+  </property>  
+
+  <property>
+      <name>mongo.collection.employee.latecount</name>
+      <value>late</value>
+  </property> 
+  <property>
+      <name>mongo.collection.employee.leaveearlycount</name>
+      <value>leaveearly</value>
+  </property> 
+  <property>
+      <name>mongo.collection.employee.absenteeismcount</name>
+      <value>absenteeism</value>
+  </property> 
+  <property>
+      <name>mongo.collection.employee.incorrectcount</name>
+      <value>incorrect</value>
+  </property>
+
+
+
+
+ 
+  
+  <property>
+    <name>mongo.collection.worktime</name>
+    <value>business_work_time</value>
+  </property>  
+   <property>
+    <name>mongo.collection.worktime.name</name>
+    <value>name</value>
+  </property> 
+    <property>
+    <name>mongo.collection.worktime.time</name>
+    <value>time</value>
+  </property>
+
+  <property>
+    <name>mongo.collection.macinfo</name>
+    <value>mac_info</value>
+  </property>
+  <property>
+      <name>mongo.collection.macinfo.mac</name>
+      <value>mac</value>
+  </property> 
+
+
+</configuration>
+

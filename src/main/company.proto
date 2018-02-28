@@ -1,0 +1,27 @@
+package doododmsg;
+option java_package = "com.doodod.staffmanagement.message";
+
+message Employee {
+  optional bytes    phone_mac  = 1; // 员工手机mac地址
+  repeated Location location   = 2; // 员工位置 
+  optional UserType user_type  = 3; // 员工类型  
+  optional bytes    company    = 4; // 员工公司
+ } 
+
+
+enum UserType {  
+  PASSENGER = 0;
+  EMPLOYEE  = 1;
+  MACHINE   = 2;
+  OUTDOOR   = 3;
+}
+
+message Location {
+  optional uint64 planar_graph = 1; // 楼层id
+  optional double location_x   = 2; // 坐标x
+  optional double location_y   = 3; // 坐标y
+  repeated uint64 time_stamp   = 4; // hbase记录的时间戳
+  repeated uint64 client_time  = 5; // 设备记录的时间戳
+  optional bytes  position_sys = 6; // 定位引擎
+  optional bytes  area         = 7; // 区域信息 
+}
